@@ -1,0 +1,187 @@
+@import url("https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,200..800;1,200..800&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "karla", sans-serif;
+}
+
+:root {
+  --Green-200: hsl(148, 38%, 91%);
+  --Green-600: hsl(169, 82%, 27%);
+  --Red: hsl(0, 66%, 56%);
+
+  --White: hsl(0, 0%, 100%);
+  --Grey-500: hsl(186, 15%, 59%);
+  --Grey-900: hsl(187, 24%, 22%);
+}
+
+html {
+  font-size: 63.5%;
+}
+
+body {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  background-color: var(--Green-200);
+}
+
+.container {
+  background-color: var(--White);
+  padding: 2rem;
+
+  border-radius: 1rem;
+  max-width: 45rem;
+}
+
+.name-input,
+.email-input,
+.radio-input {
+  margin-bottom: 1rem;
+}
+
+label {
+  display: inline-block;
+  margin-bottom: 0.5rem;
+}
+
+.name-input,
+.radios,
+.saaa {
+  display: flex;
+  gap: 1rem;
+}
+
+.radios div {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.radios div {
+  cursor: pointer;
+}
+
+h1 {
+  margin-bottom: 1.5rem;
+}
+
+input {
+  padding: 1rem;
+  cursor: pointer;
+  border: 1px solid;
+
+  border-radius: 0.4rem;
+}
+
+input:hover,
+textarea:hover {
+  border: 1px solid var(--Green-600);
+}
+
+input:focus,
+textarea:focus {
+  border: 1px solid var(--Green-600);
+}
+
+input:focus,
+textarea:focus {
+  outline: none;
+}
+
+.error-msg {
+  display: inline-block;
+  margin-top: 0.5rem;
+  color: var(--Red);
+}
+
+.radio .message {
+  margin-bottom: 2rem;
+}
+
+.sign {
+  color: blue;
+}
+
+.email-input input {
+  width: 100%;
+}
+
+.radios div {
+  border: 1px solid #000;
+  padding: 1rem;
+  width: 100%;
+
+  border-radius: 0.4rem;
+}
+
+.message {
+  margin-bottom: 2rem;
+}
+
+.message textarea {
+  width: 100%;
+  min-height: 5rem;
+
+  height: 5rem;
+  padding: 0.5rem 1rem;
+
+  font-size: 1.016rem;
+  line-height: 1.5;
+  resize: none;
+  cursor: pointer;
+}
+
+.consent {
+  margin-bottom: 2rem;
+  cursor: pointer;
+}
+
+button {
+  background-color: var(--Green-600);
+  color: var(--White);
+  border: none;
+  width: 100%;
+  padding: 1rem;
+
+  border-radius: 0.5rem;
+
+  cursor: pointer;
+
+  transition: background-color 0.25s;
+}
+
+button:hover {
+  background-color: var(--Grey-900);
+}
+
+.name-input div {
+  width: 100%;
+}
+
+.name-input input {
+  width: 100%;
+}
+
+@media screen and (max-width: 462px) {
+  .container {
+    /* width: 70%; */
+  }
+
+  .name-input,
+  .radios {
+    flex-direction: column;
+  }
+
+  .message textarea {
+    min-height: 15rem;
+  }
+
+  button {
+    padding: 1.5rem;
+  }
+}
